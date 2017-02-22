@@ -25649,7 +25649,6 @@
 	        isLoading: false
 	      });
 	    }, function (errorMessage) {
-	      debugger;
 	      that.setState({
 	        isLoading: false
 	      });
@@ -25674,7 +25673,7 @@
 	      if (isLoading) {
 	        return React.createElement(
 	          'h3',
-	          null,
+	          { className: 'text-center' },
 	          'Fetching Weather....'
 	        );
 	      } else if (location && temp) {
@@ -25687,8 +25686,8 @@
 	      null,
 	      React.createElement(
 	        'h1',
-	        null,
-	        'Weather'
+	        { className: 'text-center' },
+	        'Get Weather'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
@@ -25725,10 +25724,9 @@
 	      "form",
 	      { onSubmit: this.onFormSubmit },
 	      React.createElement("input", { type: "text", ref: "location", placeholder: "Enter City" }),
-	      React.createElement("br", null),
 	      React.createElement(
 	        "button",
-	        null,
+	        { className: "button hollow expanded" },
 	        "Get Weather"
 	      )
 	    );
@@ -25741,7 +25739,7 @@
 /* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -25763,14 +25761,14 @@
 	      temp = _ref.temp;
 
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
 	    React.createElement(
-	      'h1',
-	      null,
-	      'it is ',
+	      "h3",
+	      { className: "text-center" },
+	      "it is ",
 	      temp,
-	      ' in ',
+	      " in ",
 	      location
 	    )
 	  );
@@ -27300,7 +27298,7 @@
 /* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -27314,17 +27312,17 @@
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
 	    React.createElement(
-	      'h3',
-	      null,
-	      'About'
+	      "h1",
+	      { className: "text-center" },
+	      "About"
 	    ),
 	    React.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'Wecome to the about page!'
+	      "This is a weather application built on react. Practicing React."
 	    )
 	  );
 	};
