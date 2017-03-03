@@ -25609,7 +25609,7 @@
 	            React.createElement(
 	              'li',
 	              null,
-	              React.createElement('input', { type: 'search', place: 'Search Weather By City' })
+	              React.createElement('input', { type: 'search', placeholder: 'Search Weather By City' })
 	            ),
 	            React.createElement(
 	              'li',
